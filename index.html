@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="style.css" type="text/css"
+        rel="stylesheet">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <script src ="func.js"></script>
+        <div class="container">
+            <h1>HICKIES Originals</h1>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="one">1,293 reviews</span>
+            <br/>
+            <span class="zero">$14.99 </span>
+            <span class="one">$17.99</span>
+            <span class="one">25% OFF</span>
+            <h5> ONLINE EXCLUSIVE </h5>
+            <span class="two">COLOR: </span><span id="colour"></span>
+            <br/>
+            <br/>
+            <p>
+            <button onclick="myFunction(0)" id="Red" class="custom-dot custom-dot1 m-1"></button>
+            <button onclick="myFunction(1)" id="Purple" class="custom-dot custom-dot2 m-1"></button>
+            <button onclick="myFunction(2)" id="Black" class="custom-dot custom-dot3    m-1"></button>
+            <button onclick="myFunction(3)" id="White" class="custom-dot custom-dot4    m-1"></button>
+            <button onclick="myFunction(4)" id="Orange" class="custom-dot custom-dot5   m-1"></button>
+            <button onclick="myFunction(5)" id="Yellow" class="custom-dot custom-dot6   m-1"></button>
+            <button onclick="myFunction(6)" id="Cerulean Blue" class="custom-dot custom-dot7   m-1"></button>
+            <button onclick="myFunction(7)" id="Blue Gray" class="custom-dot custom-dot8   m-1"></button>
+            <button onclick="myFunction(8)" id="Peach" class="custom-dot custom-dot9   m-1"></button>
+            <button onclick="myFunction(9)" id="Light Blue" class="custom-dot custom-dot10   m-1"></button>
+            <button onclick="myFunction(10)" id="Lime Green" class="custom-dot custom-dot11   m-1"></button>
+            <br />
+            <button onclick="myFunction(11)" id="Pink" class="custom-dot custom-dot12   m-1"></button>
+            <button onclick="myFunction(12)" id="Tan" class="custom-dot custom-dot13   m-1"></button>
+            <button onclick="myFunction(13)" id="Dark Green" class="custom-dot custom-dot14   m-1"></button>
+            <button onclick="myFunction(14)" id="Dark Gray" class="custom-dot custom-dot15   m-1"></button>
+            <button onclick="myFunction(15)" id="Dark Brown" class="custom-dot custom-dot16   m-1"></button>
+            <button onclick="myFunction(16)" id="Turqouise" class="custom-dot custom-dot17   m-1"></button>
+            <button onclick="myFunction(17)" id="Gray" class="custom-dot custom-dot18   m-1"></button>
+            </p>
+            <p class="zero">Size Guide</p>
+            <p class="zero">Your Custom Fit</p>
+            <div class="display-rule">
+                <output id="result" value="result()" class="result-style">0</output>
+                <button class="btn-one" type ="button" data-toggle="modal" data-target="#myModal" value= "Add to Cart" id="mod">Add to Cart</button>
+            </div>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <!--Modal Heading-->
+                        <div class="modal-header">
+                            <h4 class = "modal-title">Please add the quantity of the
+                                item you selected</h4>
+
+                            <!---Modal body--->
+                            <div class="modal-body">
+                                <span id="colour2"></span>
+                                        <button type="button" class="btn-plus" onclick= "minus()">
+                                        <span class="glyphicon glyphicon-minus-sign custom ml-auto"></span>
+                                    </button>
+                                    <span id = "cont">0</span>
+                                    <button type="button" class="btn-plus" onclick= "add()">
+                                        <span class="glyphicon glyphicon-plus-sign custom ml-auto"></span>
+                                    </button>
+                            </div>
+
+                            <!---Modal footer-->
+                            <div class="modal-footer">
+                                <button type="button" class=" btn-success"
+                                data-dismiss="modal" onclick="apply()">Agree</button>
+                                <button type="button" class=" btn-danger"
+                                data-dismiss="modal" onclick="reset()">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="new1" />
+            <p class="zero"> DETAILS </p>
+            <hr class="new1" />
+            <p class="zero">Need help?</p>
+            <p class="zero">Shipping & Returns</p>
+    </div>
+    <script>
+        function myFunction(i) {
+                var x = document.getElementsByTagName("button")[i].getAttribute("id");
+                document.getElementById("colour").innerHTML = x;
+                document.getElementById("colour2").innerHTML = x;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
