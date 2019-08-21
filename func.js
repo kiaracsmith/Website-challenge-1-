@@ -35,3 +35,9 @@ function apply(){
         document.getElementById("mod").innerHTML = "Add to Cart";
     }
 }
+
+ function myFunction(i) {
+      var x = document.getElementsByTagName("button")[i].getAttribute("id");
+      document.getElementById("colour").innerHTML = x;
+      document.getElementById("colour2").innerHTML = x;
+ }
