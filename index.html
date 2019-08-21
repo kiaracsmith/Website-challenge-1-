@@ -18,6 +18,7 @@
         <script src ="func.js"></script>
         <div class="container">
             <h1>HICKIES Originals</h1>
+            <!---stars for reviews --->
             <span class="glyphicon glyphicon-star"></span>
             <span class="glyphicon glyphicon-star"></span>
             <span class="glyphicon glyphicon-star"></span>
@@ -29,10 +30,13 @@
             <span class="one">$17.99</span>
             <span class="one">25% OFF</span>
             <h5> ONLINE EXCLUSIVE </h5>
-            <span class="two">COLOR: </span><span id="colour"></span>
+            <span class="two">COLOR: </span>
+            <!--- output for multi coloured buttons --->
+            <span id="colour"></span>
             <br/>
             <br/>
             <p>
+            <!--- multi coloured buttons --->    
             <button onclick="myFunction(0)" id="Red" class="custom-dot custom-dot1 m-1"></button>
             <button onclick="myFunction(1)" id="Purple" class="custom-dot custom-dot2 m-1"></button>
             <button onclick="myFunction(2)" id="Black" class="custom-dot custom-dot3    m-1"></button>
@@ -55,10 +59,12 @@
             </p>
             <p class="zero">Size Guide</p>
             <p class="zero">Your Custom Fit</p>
+            <!---the display for the counter + the button to get to the modal -->
             <div class="display-rule">
                 <output id="result" value="result()" class="result-style">0</output>
                 <button class="btn-one" type ="button" data-toggle="modal" data-target="#myModal" value= "Add to Cart" id="mod">Add to Cart</button>
             </div>
+            <!-- start of the modal -->
             <div class="modal fade" id="myModal">
                 <div class="modal-dialog modal-sm">
                     <div class="modal-content">
@@ -95,14 +101,7 @@
             <hr class="new1" />
             <p class="zero">Need help?</p>
             <p class="zero">Shipping & Returns</p>
-    </div>
-    <script>
-        function myFunction(i) {
-                var x = document.getElementsByTagName("button")[i].getAttribute("id");
-                document.getElementById("colour").innerHTML = x;
-                document.getElementById("colour2").innerHTML = x;
-        }
-    </script>
+        </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
